@@ -9,11 +9,11 @@ By clicking one particular item in the master list, the application will show mo
 
 ## Deliverables
 
-![book gif](master_detail_book_gif.gif)
+![beer gif](master_beer_detail_gif.gif)
 
-**As a user, when the page loads I should see a list of book titles retrieved from an API on the left hand side of the screen.**
+**As a user, when the page loads I should see a list of beer names retrieved from an API on the left hand side of the screen.**
 
-**As a user, when I click a book title, the application should reveal more information about that particular book.**
+**As a user, when I click a beer name, the application should reveal more information about that particular beer.**
 
 
 ## Implementation Notes
@@ -32,26 +32,26 @@ That's it. You will have a server running on `localhost:3000` that serves the JS
 
 *Troubleshooting: If this fails, be sure you don't already have something running on port 3000*
 
-The API endpoint we need to retrieve all the books is the conventional RESTful route of `http://localhost:3000/books`
+The API endpoint we need to retrieve all the beers is the conventional RESTful route of `http://localhost:3000/beers`
 
 ### Styling
 
 [Bootstrap](https://getbootstrap.com/docs/3.3/components/#list-group) is loaded into this project via a link tag in the head of the html. Generally, do not worry about styling in this application.
 
-Though one important point is that for the book titles to show up correctly the html should have the following class names:
+Though one important point is that for the beer names to show up correctly the html should have the following class names:
 
 ```html
 <ul class="list-group">
-  <li class="list-group-item">Book title 1</li>
-  <li class="list-group-item">Book title 2</li>
+  <li class="list-group-item">Beer title 1</li>
+  <li class="list-group-item">Beer title 2</li>
   /* etc... */
 </ul>
 ```
 
-The book details should be added to this div
+The beer details should be added to this div
 
 ```html
-<div id="book-detail">
+<div id="beer-detail">
 
 </div>
 ```
@@ -62,4 +62,4 @@ You are free to solve this in any way you choose. It is not required that you ha
 
 jQuery is included in this project, you can choose to use jQuery or vanilla JS.
 
-When you click on an individual `<li>` you will need some of way of determining which particular book was clicked on. How will you solve this problem?
+When you click on an individual `<li>` you will need some of way of determining which particular beer was clicked on. How will you solve this problem?
