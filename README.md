@@ -1,7 +1,7 @@
 # Module 3 Code Challenge
 ![Master-Detail](Master-Detail.png)
 
-For this code challenge you will be building out what is called a Master Detail Interface.  This is a very common pattern that you have definitely seen before.
+For this code challenge you will be building out what is called a **Master Detail Interface**.  This is a very common pattern that you have definitely seen before.
 
 Often, on the side of the screen you will see a list of "all the things", think all of your emails or messages or youtube search results. There will usually be some information about that thing, the email subject and sender for example, but not all of the information that item contains (i.e. not the whole body of the email).
 
@@ -55,7 +55,7 @@ To update a beer you'll need to make a PATCH request
 
   **Important Notes:**
   * Don't forget to stringify the body of the request.
-  * When using `fetch` to make a PATCH request be sure to capitalize method: 'PATCH'*
+  * When using `fetch` to make a PATCH request be sure to capitalize method: 'PATCH'
 
 
 
