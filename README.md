@@ -15,6 +15,8 @@ By clicking one particular item in the master list, the application will show mo
 
 **As a user, when I click a beer name, the application should reveal more information about that particular beer.**
 
+**As a user, when looking at the details of a beer I can click the 'Edit' button which will allow me to edit the description of a beer. Clicking 'Save' will update the the beer with the new description in the backend**
+
 
 ## Implementation Notes
 
