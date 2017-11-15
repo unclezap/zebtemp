@@ -9,13 +9,13 @@ By clicking one particular item in the master list, the application will show mo
 
 ## Deliverables
 
-![beer gif](master_beer_detail_gif.gif)
+![beer gif](code-challenge-mod-iii-round-ii.gif)
 
 **As a user, when the page loads I should see a list of beer names retrieved from an API on the left hand side of the screen.**
 
 **As a user, when I click a beer name, the application should reveal more information about that particular beer.**
 
-**As a user, when looking at the details of a beer I can click the 'Edit' button which will allow me to edit the description of a beer. Clicking 'Save' will update the the beer with the new description in the backend**
+**As a user, when looking at the details of a beer I can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database**
 
 
 ## Implementation Notes
@@ -34,7 +34,30 @@ That's it. You will have a server running on `localhost:3000` that serves the JS
 
 *Troubleshooting: If this fails, be sure you don't already have something running on port 3000*
 
-The API endpoint we need to retrieve all the beers is the conventional RESTful route of `http://localhost:3000/beers`
+#### API Endpoints
+
+The API endpoint we need to retrieve all the beers is a conventional RESTful route
+* **Route:** GET `http://localhost:3000/beers`
+
+To update a beer you'll need to make a PATCH request
+* **Route:** PATCH `http://localhost:3000/beers/:id`
+* **Body:**
+```js
+  {description: "your new description"}
+```
+* **Headers:**
+```js
+  {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  }
+  ```
+
+  **Important Notes:**
+  * Don't forget to stringify the body of the request.
+  * When using `fetch` to make a PATCH request be sure to capitalize method: 'PATCH'*
+
+
 
 ### Styling
 
@@ -56,6 +79,18 @@ The beer details should be added to this div
 <div id="beer-detail">
 
 </div>
+```
+
+The html should look something like:
+
+```html
+<h1>Beer Name</h1>
+<img src="<add beer img url here>">
+<h3>Beer Tagline</h3>
+<textarea>Beer Description</textarea>
+<button id="edit-beer" class="btn btn-info">
+  Save
+</button>
 ```
 
 ## Considerations
