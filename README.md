@@ -22,7 +22,7 @@ By clicking one particular item in the master list, the application will show mo
 
 ### The API
 
-Instead of actually accessing the data from a remote API, this challenge uses a package called [json-server](https://github.com/typicode/json-server) to create an fake API for development and testing.
+Instead of actually accessing the data from a remote API, this challenge uses a package called [json-server](https://github.com/typicode/json-server) to create a fake API for development and testing.
 
 It is very easy to set-up.
 
