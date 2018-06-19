@@ -8,23 +8,23 @@
 - ES6 Classes
 - Fetching from APIs
 
-![beer gif](code-challenge-mod-iii-round-ii.gif)
-
 ## Instructions
 
-**For this code challenge, you will be building a Beer App 🍺🍺🍺 **
-
-Your beer app will be structured as a **Master Detail Interface**. 
+For this code challenge, you will be building a **Master Detail Interface**
 
 This is a very common pattern that you have definitely seen before. Often on the side of the screen, you will see a list of "all things" (think all Messages) that will contain some information about each message (sender and first few lines of message), but not all of the information that message contains.
 
 By clicking one particular message on the master list, the application will show more information about that particular message.
 
-- As a user, when the page loads, you should see a list of beer names retrieved from an API on the left hand side of the screen.
+#### Today, you will be building a Beer App 🍺🍺🍺
 
-- As a user, when you click a beer name, the application should reveal more information about that particular beer.
+-- As a user, when the page loads, you should see a list of beer names retrieved from an API on the left hand side of the screen.
 
-- As a user, when looking at the details of a beer, you can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database
+-- As a user, when you click a beer name, the application should reveal more information about that particular beer.
+
+-- As a user, when looking at the details of a beer, you can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database
+
+![beer gif](code-challenge-mod-iii-round-ii.gif)
 
 ## The API
 
@@ -34,7 +34,7 @@ It is very easy to set-up.
 
 1 - Run the command `npm install -g json-server` in the command line from this directory
 
-2 - Run  `json-server --watch db.json --static .`
+2 - Run  `json-server --watch db.json`
 
 That's it. You will have a server running on `localhost:3000` that serves the JSON data contained in the `db.json` file.
 
