@@ -10,7 +10,7 @@
 
 ## Instructions
 
-For this code challenge, you will be building a **Master Detail Interface**
+For this code challenge, you will be building a **[Master Detail Interface](Master-Detail.png)**
 
 This is a very common pattern that you have definitely seen before. Often on the side of the screen, you will see a list of "all things" (think all Messages) that will contain some information about each message (sender and first few lines of message), but not all of the information that message contains.
 
@@ -107,7 +107,7 @@ To update a beer you'll need to make a PATCH request
   ```
 
   **Important Notes:**
-  * For all intensive purpose, PATCH behaves the same as POST. If you know how to POST, you know how to PATCH
+  * For all intents and purposes, PATCH behaves the same as POST. If you know how to POST, you know how to PATCH
   * Don't forget to stringify the body of the request.
   * When using `fetch` to make a PATCH request be sure to capitalize method: 'PATCH'
 
