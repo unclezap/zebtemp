@@ -1,5 +1,4 @@
 # Module 3 JS Code Challenge
-![beer gif](code-challenge-mod-iii-round-ii.gif)
 
 ## Objectives
 
@@ -9,9 +8,11 @@
 - ES6 Classes
 - Fetching from APIs
 
+![beer gif](code-challenge-mod-iii-round-ii.gif)
+
 ## Instructions
 
-**For this code challenge, you will be building a Beer App ** 🍺🍺🍺
+**For this code challenge, you will be building a Beer App 🍺🍺🍺 **
 
 Your beer app will be structured as a **Master Detail Interface**. 
 
