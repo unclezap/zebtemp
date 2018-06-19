@@ -1,5 +1,15 @@
-# Module 3 Code Challenge
-![Master-Detail](Master-Detail.png)
+# Module 3 JS Code Challenge
+![beer gif](code-challenge-mod-iii-round-ii.gif)
+
+## Objectives
+
+- DOM Manipulation
+- Events and Event Handlers
+- Callbacks
+- ES6 Classes
+- Fetching from APIs
+
+## Instructions
 
 For this code challenge you will be building out what is called a **Master Detail Interface**.  This is a very common pattern that you have definitely seen before.
 
@@ -7,20 +17,15 @@ Often, on the side of the screen you will see a list of "all the things", think 
 
 By clicking one particular item in the master list, the application will show more information about that particular item.
 
-## Deliverables
+Today, you will be building a Beer App 🍺
 
-![beer gif](code-challenge-mod-iii-round-ii.gif)
+- As a user, when the page loads I should see a list of beer names retrieved from an API on the left hand side of the screen.
 
-**As a user, when the page loads I should see a list of beer names retrieved from an API on the left hand side of the screen.**
+- As a user, when I click a beer name, the application should reveal more information about that particular beer.
 
-**As a user, when I click a beer name, the application should reveal more information about that particular beer.**
+- As a user, when looking at the details of a beer I can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database
 
-**As a user, when looking at the details of a beer I can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database**
-
-
-## Implementation Notes
-
-### The API
+## The API
 
 Instead of actually accessing the data from a remote API, this challenge uses a package called [json-server](https://github.com/typicode/json-server) to create a fake API for development and testing.
 
@@ -34,10 +39,23 @@ That's it. You will have a server running on `localhost:3000` that serves the JS
 
 *Troubleshooting: If this fails, be sure you don't already have something running on port 3000*
 
-#### API Endpoints
+## Deliverables and How to Approach
 
-The API endpoint we need to retrieve all the beers is a conventional RESTful route
+For this challenge it is important to work iteratively, one feature at a time, before moving on to the next. You should **prioritize making code that works over attempting all of the deliverables.**
+
+### Step 1 - Display All Beer Names
+
+When the page loads, you should see a list of all of the beer names retrieved from the API on the left hand side of the screen. The API endpoint we need to retrieve all the beers is a conventional RESTful route
 * **Route:** GET `http://localhost:3000/beers`
+
+### Step 2 - Display Single Beer Details
+
+As a user, when you click a beer name, the application should reveal more information about that particular beer. 
+See the example above for the additional information that should be displayed. 
+
+### Step 3 - Edit Beer Details
+
+As a user, when looking at the details of a beer I can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database.
 
 To update a beer you'll need to make a PATCH request
 * **Route:** PATCH `http://localhost:3000/beers/:id`
@@ -54,10 +72,9 @@ To update a beer you'll need to make a PATCH request
   ```
 
   **Important Notes:**
+  * For all intensive purpose, PATCH behaves the same as POST. If you know how to POST, you know how to PATCH
   * Don't forget to stringify the body of the request.
   * When using `fetch` to make a PATCH request be sure to capitalize method: 'PATCH'
-
-
 
 ### Styling
 
