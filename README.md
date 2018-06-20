@@ -18,11 +18,11 @@ By clicking one particular message on the master list, the application will show
 
 #### Today, you will be building a Beer App 🍺🍺🍺
 
--- As a user, when the page loads, you should see a list of beer names retrieved from an API on the left hand side of the screen.
+-- As a user, when the page loads, I should see a list of beer names retrieved from an API on the left hand side of the screen.
 
--- As a user, when you click a beer name, the application should reveal more information about that particular beer.
+-- As a user, when I click a beer name, the application should reveal more information about that particular beer.
 
--- As a user, when looking at the details of a beer, you can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database
+-- As a user, when looking at the details of a beer, I can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database
 
 ![beer gif](code-challenge-mod-iii-round-ii.gif)
 
@@ -46,7 +46,7 @@ For this challenge, it is important to work iteratively, one feature at a time, 
 
 ### Step 1 - Display All Beer Names
 
-When the page loads, you should see a list of all of the beer names retrieved from the API on the left hand side of the screen. The API endpoint we need to retrieve all the beers is a conventional RESTful route
+When the page loads, I should see a list of all of the beer names retrieved from the API on the left hand side of the screen. The API endpoint we need to retrieve all the beers is a conventional RESTful route
 
 * **Route:** GET `http://localhost:3000/beers`
 
@@ -66,7 +66,7 @@ When the page loads, you should see a list of all of the beer names retrieved fr
 
 ### Step 2 - Display Single Beer Details
 
-As a user, when you click a beer name, the application should reveal more information about that particular beer. 
+When I click a beer name, the application should reveal more information about that particular beer. 
 See the example above for the additional information that should be displayed.
 
 * **Route:** GET `http://localhost:3000/beers/:id`
@@ -92,7 +92,7 @@ The html should look something like:
 
 ### Step 3 - Edit Beer Details
 
-As a user, when looking at the details of a beer I can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database.
+When looking at the details of a beer, I can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database.
 
 To update a beer you'll need to make a PATCH request
 * **Route:** PATCH `http://localhost:3000/beers/:id`
@@ -110,12 +110,13 @@ To update a beer you'll need to make a PATCH request
 
   **Important Notes:**
   * For all intents and purposes, PATCH behaves the same as POST. If you know how to POST, you know how to PATCH
-  * Don't forget to stringify the body of the request.
-  * When using `fetch` to make a PATCH request be sure to capitalize method: 'PATCH'
+  * When using `fetch` to make a PATCH request, be sure to capitalize method: 'PATCH'
 
 
 ## Considerations
 
 You are free to solve this in any way you choose. It is not required that you have ES6 classes or use Object Orientation. We would recommend beginning with a straightforward functional implementation and refactoring to objects as needed.
+
+jQuery is included in this project, you can choose to use jQuery or vanilla JS.
 
 When you click on an individual `<li>` you will need some of way of determining which particular beer was clicked on. How will you solve this problem?
