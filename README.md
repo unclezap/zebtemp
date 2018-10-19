@@ -66,7 +66,7 @@ When the page loads, I should see a list of all of the beer names retrieved from
 
 ### Step 2 - Display Single Beer Details
 
-When I click a beer name, the application should reveal more information about that particular beer. 
+When I click a beer name, the application should reveal more information about that particular beer.
 See the example above for the additional information that should be displayed.
 
 * **Route:** GET `http://localhost:3000/beers/:id`
@@ -116,7 +116,5 @@ To update a beer you'll need to make a PATCH request
 ## Considerations
 
 You are free to solve this in any way you choose. It is not required that you have ES6 classes or use Object Orientation. We would recommend beginning with a straightforward functional implementation and refactoring to objects as needed.
-
-jQuery is included in this project, you can choose to use jQuery or vanilla JS.
 
 When you click on an individual `<li>` you will need some of way of determining which particular beer was clicked on. How will you solve this problem?
