@@ -41,11 +41,12 @@ function individualBeerCard(beer) {
     thisBeer.className = "list-group-item"
     thisBeer.innerText = beer.name
     thisBeer.id = beer.id
+    beerList.appendChild(thisBeer)
+
     thisBeer.addEventListener('click', function(event) {
         event.preventDefault()
         drinkBeer(beer, thisBeer)
     })
-    beerList.appendChild(thisBeer)
 }
 
 function drinkBeer(beer, beerLi) {
@@ -108,13 +109,15 @@ function editFetch (beer, newBeerInfo, beerLi) {
 //         let sortedLi = li.sort( function(beer, nextBeer) {
 //             if (beer.id < nextBeer.id) {
     // return nextBeer
-}
+// }
 //         });
 //         beerList.append(li);
 // debugger;
 
 //would also be possible to just rewrite the inner text
-//but having trouble with that need to go help out group
+//but having trouble with that because clicking on the textarea for duplicates the card because the whole li has an addEventListener.  Could rewrite to separate out the beer info but would mess w/ the beerLi stuff that all the functions are using and I don't want to troubleshoot
+// need to go help out group
+
 
     })
 }
